@@ -12,48 +12,8 @@ function handleKeyUp(event) {
   }
 }
 
-
-
-function touchstart(event) {
-  if (event.touchstart === target) {
-    if (!istouchstart) {
-      touch()
-    }
-  }
-}
-
-
-
-
-
-function touch() {
-
-  istouchstart = true
-
-  let upInterval = setInterval(() => {
-    if (position >= 150) {
-      clearInterval(upInterval)
-      // Descendo
-      let downInterval = setInterval(() => {
-        if (position <= 0) {
-          clearInterval(downInterval)
-          isJumping = false
-        } else {
-          position = position - 20
-          dino.style.bottom = position + 'px'
-        }
-      }, 20)
-    } else {
-      // Subindo
-      position = position + 20
-      dino.style.bottom = position + 'px'
-    }
-  }, 20)
-}
-
-
-
 function jump() {
+
 
   isJumping = true
 
@@ -118,5 +78,3 @@ function createCactus() {
 
 createCactus()
 document.addEventListener('keyup', handleKeyUp)
-
-document.addEventListener('touchstart', touchstart)
