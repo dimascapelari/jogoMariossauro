@@ -51,10 +51,19 @@ p {
   height: 200px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
 
-  .botao {
-    opacity: 1;
+  
+  @keyframes slideright {
+    from {
+      background-position: -70000%;
+    }
+    to {
+      background-position: 0;
+    }
   }
+
+
+
 
 }
