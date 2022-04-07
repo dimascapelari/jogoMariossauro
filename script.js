@@ -20,22 +20,22 @@ function jump() {
   let upInterval = setInterval(() => {
     if (position >= 150) {
       clearInterval(upInterval)
-      // Descendo
+      // Velocidade Descendo
       let downInterval = setInterval(() => {
         if (position <= 0) {
           clearInterval(downInterval)
           isJumping = false
         } else {
-          position = position - 20
+          position = position - 10
           dino.style.bottom = position + 'px'
         }
       }, 20)
     } else {
       // Subindo
-      position = position + 20
+      position = position + 10
       dino.style.bottom = position + 'px'
     }
-  }, 20)
+  }, 10)
 }
 
 
@@ -66,8 +66,8 @@ function createCactus() {
       clearInterval(leftInterval)
       document.body.innerHTML = '<h1 class="game-over">Fim de jogo</h1><p><i>Dimas Capelari 2022</i></p>'
     } else {
-      // velocidade
-      cactusPosition = cactusPosition - 10
+      // velocidade das bombas
+      cactusPosition = cactusPosition - 7
       cactus.style.left = cactusPosition + 'px'
     }
   }, 20)
