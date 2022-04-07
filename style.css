@@ -5,15 +5,13 @@ body {
 .botao {
   display: flex;
   justify-content: right;
-  margin-top: 100px;
-  
-  
+  margin-top: 90px;
+   
 }
 
 .botao-pulo {
   width: 100px;
   height: 40px;
-  position: absolute;  
 }
 
 .dino {
