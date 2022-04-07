@@ -2,6 +2,20 @@ body {
   background: #fafafa;
 }
 
+.botao {
+  display: flex;
+  justify-content: right;
+  margin-top: 100px;
+  
+  
+}
+
+.botao-pulo {
+  width: 100px;
+  height: 40px;
+  position: absolute;  
+}
+
 .dino {
   width: 60px;
   height: 60px;

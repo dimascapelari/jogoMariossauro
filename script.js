@@ -76,5 +76,10 @@ function createCactus() {
   setTimeout(createCactus, randomTime)
 }
 
+function pulo() {
+  jump()
+}
+
+
 createCactus()
 document.addEventListener('keyup', handleKeyUp)
