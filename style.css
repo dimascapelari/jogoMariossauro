@@ -2,19 +2,6 @@ body {
   background: #fafafa;
 }
 
-.botao {
-  display: flex;
-  justify-content: right;
-  margin-top: 90px;
-  opacity: 0;
-}
-
-.botao-pulo {
-  width: 100px;
-  height: 40px;
-  border-radius: 10px;
-}
-
 .dino {
   width: 60px;
   height: 60px;
